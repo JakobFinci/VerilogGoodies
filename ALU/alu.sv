@@ -12,7 +12,6 @@ input alu_control_t control;
 logic [N-1:0] oAND, oOR, oXOR, oSLL, oSRL, oSRA, add_out, add_b_in; 
 logic oLT, oLTU, c_out;
 // o for (potental) output
-// p for pre output
 
 output logic [N-1:0] result; // Result of the selected operation.
 
