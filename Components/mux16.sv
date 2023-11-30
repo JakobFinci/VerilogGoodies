@@ -39,6 +39,6 @@ mux8 mux8b(
   .out(mid2)
 );
 
-always_comb out = s[1] ? mid2 : mid1;
+always_comb out = s[3] ? mid2 : mid1;
 
 endmodule

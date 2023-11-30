@@ -26,6 +26,6 @@ mux4 mux4_b(
     .out(mid2)
 );
 
-always_comb out = s[1] ? mid2 : mid1;
+always_comb out = s[2] ? mid2 : mid1;
 
 endmodule

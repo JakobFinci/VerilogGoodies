@@ -28,7 +28,7 @@ mux16 mux16b(
   .s(s[3:0]), .out(mid2)
 );
 
-always_comb out = s[1] ? mid2 : mid1;
+always_comb out = s[4] ? mid2 : mid1;
 
 
 endmodule
