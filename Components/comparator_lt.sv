@@ -17,7 +17,7 @@ adder_n #(.N(N)) SUBTRACTOR(
 );
 
 mux4 #(.N(1)) LT_MUX(
-  .select({a[31], b[31]}), // switch on the sign bits
+  .s({a[31], b[31]}), // switch on the sign bits
   .in0(difference[N-1]), .in1(1'b0), .in2(1'b1), .in3(difference[N-1]),
   .out(out)
 );
